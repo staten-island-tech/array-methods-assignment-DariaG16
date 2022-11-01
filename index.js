@@ -30,10 +30,14 @@ const cookies = [
     usefulIn: ["arena", "world exploration", "master mode"],
   },
 ];
-cookies.forEach((cookie) => console.log(cookie.name));
-cookies.forEach((cookie) => {
-  cookie.usefulIn.forEach(cookie.usefulIn) > console.log(cookie.usefulIn);
-});
-console.log(cookies);
-const result = cookies.filter((cookie) => (cookie.skill = "charge"));
+cookies.forEach((cookie) => console.log(cookie.name)); //logs every cookies name
+//cookies.forEach((cookie) => console.log(cookie.usefulIn)); //logs every cookies skill?
+
+ cookies.forEach((cookie) => {
+  cookie.usefulIn.forEach((cookies, cookie.usefulIn),
+  console.log(cookie.usefulIn));//the code mr whalen gave us
+ 
+
+const result = cookies.filter((cookie) => cookie.skill === "ranged"); //filters the cookies based on their skills
 console.log(result);
+cookies.forEach((cookies) => console.log(cookies.usefulIn));
