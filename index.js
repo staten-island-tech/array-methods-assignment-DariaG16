@@ -32,23 +32,22 @@ const cookies = [
 ];
 cookies.forEach((cookie) => console.log(cookie.name)); //logs every cookies name
 //cookies.forEach((cookie) => console.log(cookie.usefulIn)); //logs every cookies skill?
-
+/* 
 cookies.forEach((cookie) => {
   cookies.usefulIn.forEach((cookie) => {
     console.log(forEach);
   });
-}); //the code mr whalen gave us
+}); //the code mr whalen gave us */
 
 const result = cookies.filter((cookie) => cookie.skill === "ranged"); //filters the cookies based on their skills
 console.log(result);
-cookies.forEach((cookies) => console.log(cookies.usefulIn));
 
-Row1.forEach((Character) => {
-  console.log(Character.name);
-  console.log(Character.ability);
-  Character.numbers.forEach((numbers) => {
-    console.log(numbers);
+cookies.forEach((cookies) => {
+  console.log(cookies.name);
+  console.log(cookies.skill);
+  cookies.usefulIn.forEach((usefulIn) => {
+    console.log(usefulIn);
   });
 });
 
-displayStats();
+//ASSESSMENT: whalen gives us an array and we need to do two things: create a filter, create a foreach to filter each name. Like the thing above.
